@@ -27,7 +27,7 @@ const Currency: React.FC<CurrencyProps> = ({
   // Hydration error prevention check end
 
   return (
-    <div className="semibold">
+    <div className="font-semibold	">
       {formatter.format(Number(value))}
     </div>
   );
