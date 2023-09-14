@@ -1,8 +1,7 @@
 "use client";
 
-import {Transition} from "@headlessui/react";
+import {Dialog, Transition} from "@headlessui/react";
 import {Fragment} from "react";
-import {Dialog} from "next/dist/client/components/react-dev-overlay/internal/components/Dialog";
 import {X} from "lucide-react";
 
 import IconButton from "@/components/ui/icon-button";
