@@ -1,4 +1,4 @@
-import NavbarActions from "@/components/mavbar-actions";
+import NavbarActions from "@/components/navbar-actions";
 import Container from "@/components/ui/container";
 import MainNav from "@/components/main-nav";
 
