@@ -1,12 +1,11 @@
 "use client";
 
 import PreviewModal from "@/components/preview-modal";
-
 import {useEffect, useState} from "react";
 
 const ModalProvider = () => {
   // hydration check
-  const [isMounted, setIsMounted]  = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
     setIsMounted(true);
