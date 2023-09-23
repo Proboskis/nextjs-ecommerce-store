@@ -7,7 +7,7 @@ import {Size, Colror} from "@/../../../../../types";
 
 import Button from "@/components/ui/button";
 
-import {cn} from "@/lib/lib";
+import {cn} from "@/lib/utils";
 
 interface FilterProps {
   data: (Size | Colror)[];
