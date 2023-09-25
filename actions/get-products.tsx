@@ -1,4 +1,3 @@
-import {Product} from "@/types";
 import queryString from "query-string";
 
 const URL = `${process.env.NEXT_PUBLIC_API_URL}/products`;
@@ -10,14 +9,14 @@ interface Query {
   isFeatured: boolean;
 }
 
-const getProducts = async (Query: Query): Promise<Product[]> => {
+const getProducts = async (query: Query): Promise<[]> => {
   const url = queryString.stringifyUrl({
     url: URL,
     query: {
-      colorId: queryString.colorId,
-      sizeId: queryString.sizeId,
-      categoryId: queryString.categoryId,
-      isFeatured: queryString.isFeatured
+      colorId: query.colorId,
+      sizeId: query.sizeId,
+      categoryId: query.categoryId,
+      isFeatured: query.isFeatured
     }
   });
 
